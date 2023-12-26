@@ -1,0 +1,149 @@
+/* background: linear-gradient(#ffda00, #ffb000); */
+/* background: linear-gradient(#00eaff, #00aaff); */
+/* background: linear-gradient(#00ffff, #00bfff); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    color: #fff;
+}
+
+body {
+    /* background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+    background-image: url(../img/backgroundOr2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: none;
+}
+
+.mobile_container {
+    display: block;
+    /* background-color: #fff; */
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: 360px;
+    max-width: 100%;
+    min-width: 260px;
+    height: 450px;
+}
+
+nav {
+    padding: 20px 30px 0px;
+    font-size: 13px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+nav li {
+    margin-right: 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* nav hr {
+    margin-top: 10px;
+} */
+
+.menu_line {
+    position: absolute;
+    background-color: #512da8;
+    height: 3px;
+    left: 0px;
+    bottom: -2px;
+    border-radius: 3px;
+}
+
+.menu_line.on_log {
+    width: 38px;
+    transform: translateX(72px);
+}
+
+.menu_line.on_reg {
+    width: 90px;
+    transform: translateX(124px);
+}
+
+.form_container {
+    position: relative;
+    top: 0;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.form_container a {
+    text-decoration: none;
+}
+
+.form_container h1 {
+    margin: 20px 0px;
+}
+
+.form_container input {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form_container button {
+    background-color: #fe9d46;
+    font-size: 12px;
+    padding: 10px 0px;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form_container.reg {
+    display: block;
+}
+
+.form_container.reg.show_content {
+    display: block;
+}
+
+.form_container.log {
+    display: none;
+}
+
+.form_container.log.show_content {
+    display: none;
+}

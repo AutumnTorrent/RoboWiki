@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabWork№3/Login</title>
+    <link rel="stylesheet" href="css/form_login.css">
+</head>
+<body>
+    <div class="mobile_container">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li class="nav_item nav_item_active" id="nav_item_log"><span>Вход</span></li>
+                <li class="nav_item" id="nav_item_reg"><span>Регистрация</span></li>
+                <div class="menu_line on_log" id="menu_line"></div>
+            </ul>
+            <hr>
+        </nav>
+        <div class="form_container reg" id="reg_cont">
+            <form id="register_form" action="/" >
+                <h1>Регистрация</h1>
+                <input type="text" id="name_reg" placeholder="Имя" name="name">
+                <input type="email" id="email_reg" placeholder="Почта" name="email">
+                <input type="password" id="pass_reg" placeholder="Пароль" name="pass">
+                <button type="button" onclick="register()">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="form_container log show_content" id="log_cont">
+            <form id="login_form" action="/login" method="post">
+                <h1>Вход</h1>
+                <input type="email" id="email_log" placeholder="Почта" name="email">
+                <input type="password" id="pass_log" placeholder="Пароль" name="pass">
+                <a href="#">Вы не забываете пароль</a>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/form_login.js"></script>
+</html>

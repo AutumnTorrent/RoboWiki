@@ -5,6 +5,7 @@ const path = require('path')
 const front_path = path.join(__dirname,'../front');
 // const puppeteer = require('puppeteer');
 
+app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 const students_routes = require('./routes/students');

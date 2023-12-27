@@ -133,7 +133,7 @@ nav a {
 }
 
 .form_container.reg {
-    display: block;
+    display: none;
 }
 
 .form_container.reg.show_content {
@@ -145,5 +145,5 @@ nav a {
 }
 
 .form_container.log.show_content {
-    display: none;
+    display: block;
 }

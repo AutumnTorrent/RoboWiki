@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LabWork№3/Login</title>
     <link rel="stylesheet" href="css/form_login.css">
 </head>
+
 <body>
     <div class="mobile_container">
         <nav>
@@ -18,16 +20,16 @@
             <hr>
         </nav>
         <div class="form_container reg" id="reg_cont">
-            <form id="register_form" action="/" >
+            <form id="register_form">
                 <h1>Регистрация</h1>
-                <input type="text" id="name_reg" placeholder="Имя" name="name">
-                <input type="email" id="email_reg" placeholder="Почта" name="email">
-                <input type="password" id="pass_reg" placeholder="Пароль" name="pass">
-                <button type="button" onclick="register()">Зарегистрироваться</button>
+                <input value="asd" type="text" id="name_reg" placeholder="Имя" name="name">
+                <input value="asd@asd.asd" type="email" id="email_reg" placeholder="Почта" name="email">
+                <input value="asd" type="password" id="pass_reg" placeholder="Пароль" name="pass">
+                <button type="submit">Зарегистрироваться</button>
             </form>
         </div>
         <div class="form_container log show_content" id="log_cont">
-            <form id="login_form" action="/login" method="post">
+            <form id="login_form">
                 <h1>Вход</h1>
                 <input type="email" id="email_log" placeholder="Почта" name="email">
                 <input type="password" id="pass_log" placeholder="Пароль" name="pass">
@@ -38,4 +40,5 @@
     </div>
 </body>
 <script src="js/form_login.js"></script>
+
 </html>

@@ -6,14 +6,14 @@ const getStudents = (async (req, res) => {
 });
 
 const getStudentByID = (async (req, res) => {
-    let user_id = req.params.id;
-    const result = await Students.find({ _id: user_id })
+    let student_id = req.params.id;
+    const result = await Students.find({ _id: student_id })
     res.send(result);
 });
 
 const addStudent = (async (req, res) => {
     let new_student = req.query;
-    const search_student = await Students.find({ _id: new_user._id })
+    const search_student = await Students.find({ _id: new_student._id })
     if (search_student.length == 0) {
         const result = await Students.create(new_student);
         res.send(result)

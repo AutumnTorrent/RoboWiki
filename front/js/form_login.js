@@ -35,9 +35,9 @@ register_form.addEventListener('submit', async (event) => {
     })
         .then(res => res.json())
         .then(data => {
-            if (data.massage == 'успешная регистрация'){
+            if (data.massage == 'успешная регистрация') {
                 p_reg.textContent = data.massage;
-            } else{
+            } else {
                 p_reg.textContent = data.massage;
             }
         })
@@ -60,9 +60,9 @@ login_form.addEventListener('submit', async (event) => {
     })
         .then(res => res.json())
         .then(data => {
-            if (data.massage == `успех`){
+            if (data.massage == `успех`) {
                 window.location.replace('http://localhost:3000/index.html')
-            } else {                
+            } else {
                 p_log.textContent = data.massage;
             }
         })

@@ -1,0 +1,32 @@
+main {
+    backdrop-filter: blur(10px);
+    padding-bottom: 40%;
+}
+
+.main_header {
+    border: thick double #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 1% 3%;
+}
+
+.main_content {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5% 2%;
+}
+
+.content_header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.content_info {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.content_info ul {
+    margin-left: 21px;
+}

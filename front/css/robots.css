@@ -35,6 +35,7 @@ main .main_header {
     justify-content: end;
     margin-right: 20px;
 }
+
 .main .content .btn {
     margin: 20px 00px;
     padding: 15px 0px;
@@ -43,6 +44,7 @@ main .main_header {
     width: 200px;
     transform: skew(-15deg);
 }
+
 .main .content .btn a {
     display: block;
     text-decoration: none;

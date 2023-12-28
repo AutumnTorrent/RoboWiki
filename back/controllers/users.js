@@ -18,7 +18,7 @@ const logUsers = async (req, res) => {
     if (search_user.length != 0) {
         res.json({massage: `успех`});
     } else {
-        res.json({ massage: `Не правильный пароль или почта` });
+        res.json({ massage: `Не верные данные` });
     }
 }
 
